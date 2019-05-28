@@ -1,0 +1,569 @@
+﻿Log file open, 10/31/16 23:07:02
+LogInit:Display: Running engine for game: UE4_PongSec3
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(2058292828) SRandInit(2058292830).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.088132
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.11.01-06.07.02:989][  0]LogInit: Selected Device Profile: [Windows]
+[2016.11.01-06.07.02:989][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.11.01-06.07.03:009][  0]LogInit: Computer: REDLINE
+[2016.11.01-06.07.03:009][  0]LogInit: User: Machinehead
+[2016.11.01-06.07.03:009][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.11.01-06.07.03:009][  0]LogInit: High frequency timer resolution =3.225827 MHz
+[2016.11.01-06.07.03:009][  0]LogMemory: Memory total: Physical=8.0GB (8GB approx)
+[2016.11.01-06.07.03:009][  0]LogMemory: Platform Memory Stats for Windows
+[2016.11.01-06.07.03:009][  0]LogMemory: Process Physical Memory: 189.38 MB used, 189.38 MB peak
+[2016.11.01-06.07.03:009][  0]LogMemory: Process Virtual Memory: 194.93 MB used, 194.93 MB peak
+[2016.11.01-06.07.03:009][  0]LogMemory: Physical Memory: 2685.03 MB used, 8154.05 MB total
+[2016.11.01-06.07.03:009][  0]LogMemory: Virtual Memory: 538.25 MB used, 134217728.00 MB total
+[2016.11.01-06.07.03:043][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2016.11.01-06.07.03:453][  0]LogD3D11RHI: D3D11 adapters:
+[2016.11.01-06.07.03:475][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 760' (Feature Level 11_0)
+[2016.11.01-06.07.03:475][  0]LogD3D11RHI:       4062/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.11.01-06.07.03:476][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.11.01-06.07.03:476][  0]LogD3D11RHI:       0/0/4077 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.11.01-06.07.03:476][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.11.01-06.07.03:480][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.11.01-06.07.03:480][  0]LogD3D11RHI:     GPU DeviceId: 0x1187 (for the marketing name, search the web for "GPU Device Id")
+[2016.11.01-06.07.03:480][  0]LogWindows: EnumDisplayDevices:
+[2016.11.01-06.07.03:480][  0]LogWindows:    0. 'NVIDIA GeForce GTX 760' (P:1 D:1)
+[2016.11.01-06.07.03:480][  0]LogWindows:    1. 'NVIDIA GeForce GTX 760' (P:0 D:1)
+[2016.11.01-06.07.03:481][  0]LogWindows:    2. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2016.11.01-06.07.03:481][  0]LogWindows:    3. 'NVIDIA GeForce GTX 760' (P:0 D:0)
+[2016.11.01-06.07.03:481][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.11.01-06.07.03:481][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 760
+[2016.11.01-06.07.03:481][  0]LogD3D11RHI:   Driver Version: 369.09 (internal:21.21.13.6909, unified:369.09)
+[2016.11.01-06.07.03:481][  0]LogD3D11RHI:      Driver Date: 8-1-2016
+[2016.11.01-06.07.03:481][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.11.01-06.07.03:493][  0]LogD3D11RHI: Async texture creation enabled
+[2016.11.01-06.07.03:504][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.11.01-06.07.03:504][  0]LogShaderCompilers: Guid format shader working directory is -26 characters bigger than the processId version (../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Intermediate/Shaders/WorkingDirectory/3064/).
+[2016.11.01-06.07.03:505][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/MACHIN~1/AppData/Local/Temp/UnrealShaderWorkingDir/BD7E1F3E455EA9045949F9AADF06CF4A/'.
+[2016.11.01-06.07.03:505][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.11.01-06.07.04:529][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.11.01-06.07.04:541][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.11.01-06.07.04:553][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.11.01-06.07.04:565][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.11.01-06.07.04:576][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.11.01-06.07.04:585][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.11.01-06.07.04:593][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.11.01-06.07.04:602][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.11.01-06.07.04:611][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.11.01-06.07.04:619][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.11.01-06.07.04:627][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.11.01-06.07.04:645][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.11.01-06.07.04:645][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.11.01-06.07.04:646][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.11.01-06.07.04:670][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.11.01-06.07.04:677][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.11.01-06.07.04:685][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.11.01-06.07.04:694][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.11.01-06.07.04:702][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.11.01-06.07.04:702][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.11.01-06.07.04:824][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.11.01-06.07.04:874][  0]LogDerivedDataCache: Loaded boot cache 0.05s 48MB C:/Users/Machinehead/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.11.01-06.07.04:875][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/Machinehead/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.11.01-06.07.04:875][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.11.01-06.07.04:875][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.11.01-06.07.04:875][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.11.01-06.07.04:875][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.11.01-06.07.04:892][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.11.01-06.07.04:904][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Machinehead/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.11.01-06.07.05:123][  0]LogInit: Selected Device Profile: [Windows]
+[2016.11.01-06.07.05:124][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.11.01-06.07.05:309][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.11.01-06.07.05:309][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.11.01-06.07.05:309][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.11.01-06.07.05:586][  0]LogAssetRegistry: FAssetRegistry took 0.0217 seconds to start up
+[2016.11.01-06.07.05:638][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.048215 seconds
+[2016.11.01-06.07.05:643][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.11.01-06.07.05:643][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.11.01-06.07.05:643][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.11.01-06.07.05:656][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.11.01-06.07.05:885][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.11.01-06.07.05:885][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.11.01-06.07.06:805][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.11.01-06.07.07:097][  0]SourceControl: Info Source control is disabled
+[2016.11.01-06.07.07:098][  0]SourceControl: Info Source control is disabled
+[2016.11.01-06.07.07:114][  0]SourceControl: Info Source control is disabled
+[2016.11.01-06.07.07:128][  0]SourceControl: Info Source control is disabled
+[2016.11.01-06.07.07:466][  0]LogEngine: Initializing Engine...
+[2016.11.01-06.07.07:467][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.11.01-06.07.07:467][  0]LogHMD: SteamVR failed to initialize.  Err: 110
+[2016.11.01-06.07.07:615][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.11.01-06.07.07:636][  0]LogInit: XAudio2 using 'Speakers (Yeti Stereo Microphone)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.01-06.07.07:649][  0]LogInit: FAudioDevice initialized.
+[2016.11.01-06.07.07:672][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/Machinehead/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.11.01-06.07.07:679][  0]LogInit: Texture streaming: Enabled
+[2016.11.01-06.07.07:702][  0]LogInit: Transaction tracking system initialized
+[2016.11.01-06.07.07:741][  0]BlueprintLog: New page: Editor Load
+[2016.11.01-06.07.07:864][  0]LocalizationService: Info Localization service is disabled
+[2016.11.01-06.07.07:956][  0]LogConsoleResponse:Display: 
+[2016.11.01-06.07.08:080][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.11.01-06.07.08:080][  0]LogCook:Display: Mobile HDR setting 1
+[2016.11.01-06.07.08:230][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/' took 0.01s
+[2016.11.01-06.07.08:230][  0]SourceControl: Info Source control is disabled
+[2016.11.01-06.07.08:231][  0]Cmd: MAP LOAD FILE="../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Maps/Pong_Playfield.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.11.01-06.07.08:231][  0]LightingResults: New page: Lighting Build
+[2016.11.01-06.07.08:236][  0]MapCheck: New page: Map Check
+[2016.11.01-06.07.08:236][  0]LightingResults: New page: Lighting Build
+[2016.11.01-06.07.09:506][  0]LogAIModule: Creating AISystem for world Pong_Playfield
+[2016.11.01-06.07.09:514][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.11.01-06.07.09:515][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.11.01-06.07.09:618][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 103.492ms to complete.
+[2016.11.01-06.07.09:618][  0]LogFileHelpers: Loading map 'Pong_Playfield' took 1.388
+[2016.11.01-06.07.09:813][  0]LogCollectionManager: Loaded 0 collections in 0.003495 seconds
+[2016.11.01-06.07.09:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/Collections/' took 0.01s
+[2016.11.01-06.07.09:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/Developers/Machinehead/Collections/' took 0.01s
+[2016.11.01-06.07.09:881][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/Collections/' took 0.01s
+[2016.11.01-06.07.09:881][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.11.01-06.07.09:889][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 2047 classes and 369 folders.
+[2016.11.01-06.07.09:895][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.11.01-06.07.09:895][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.11.01-06.07.09:895][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 12 classes and 0 folders.
+[2016.11.01-06.07.09:903][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.11.01-06.07.09:967][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2016.11.01-06.07.09:973][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.11.01-06.07.10:028][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.11.01-06.07.10:032][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2016.11.01-06.07.10:060][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.11.01-06.07.10:060][  0]LogLoad: Full Startup: 8.22 seconds (BP compile: 0.19 seconds)
+[2016.11.01-06.07.10:060][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2016.11.01-06.07.10:070][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.11.01-06.07.10:071][  0]LogOcInput: OculusInput pre-init called
+[2016.11.01-06.07.10:089][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.11.01-06.07.10:251][  0]LogRenderer: Reallocating scene render targets to support 636x396 (Frame:2).
+[2016.11.01-06.07.10:331][  1]LogAssetRegistry: Asset discovery search completed in 4.7670 seconds
+[2016.11.01-06.07.10:331][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.11.01-06.07.10:331][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000033 seconds (updated 0 objects)
+[2016.11.01-06.07.39:773][342]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0009 seconds. Added 111 classes and 0 folders.
+[2016.11.01-06.07.40:427][342]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.07.40:427][342]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.09.48:869][764]LogContentBrowser: Native class hierarchy updated for 'Cascade' in 0.0010 seconds. Added 2 classes and 2 folders.
+[2016.11.01-06.09.48:946][764]LogTexture:Display: Building textures: CASC_Normal (BC5)
+[2016.11.01-06.09.48:950][764]LogTexture:Display: Building textures: CASC_Point (AutoDXT)
+[2016.11.01-06.09.48:961][764]LogTexture:Display: Building textures: CASC_Lights (BC5)
+[2016.11.01-06.09.48:972][764]LogTexture:Display: Building textures: CASC_CurveEd (AutoDXT)
+[2016.11.01-06.09.48:983][764]LogTexture:Display: Building textures: CASC_ModuleDisable (AutoDXT)
+[2016.11.01-06.09.49:007][764]LogTexture:Display: Building textures: CASC_Solo_On (AutoDXT)
+[2016.11.01-06.09.49:010][764]LogTexture:Display: Building textures: CASC_Solo_Off (AutoDXT)
+[2016.11.01-06.09.49:013][764]LogTexture:Display: Building textures: CASC_DisabledModule (AutoDXT)
+[2016.11.01-06.09.49:214][764]LogRenderer: Reallocating scene render targets to support 716x396 (Frame:8246).
+[2016.11.01-06.09.49:226][764]LogRenderer: Reallocating scene render targets to support 896x396 (Frame:8247).
+[2016.11.01-06.10.13:451][577]LogCascade: Quitting Cascade. FXSystem=0x000001DFFA85B060
+[2016.11.01-06.10.48:528][736]Cmd: DELETE
+[2016.11.01-06.10.48:528][736]Cmd: ACTOR DELETE
+[2016.11.01-06.10.48:529][736]LogEditorActor: Deleted Actor: Emitter
+[2016.11.01-06.10.48:573][736]LogEditorActor: Deleted 1 Actors (0.045 secs)
+[2016.11.01-06.12.55:130][407]BlueprintLog: New page: Compile BP_Gameball
+[2016.11.01-06.12.55:212][407]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.55:212][407]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.55:293][407]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.55:293][407]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.55:295][407]BlueprintEditorCompileResults: Info [0353.45] Compile of BP_Gameball successful! [in 165 ms] (/Game/UE4_Pong/Blueprints/BP_Gameball.BP_Gameball)
+[2016.11.01-06.12.56:156][477]LogSavePackage: Save=108.30ms
+[2016.11.01-06.12.56:156][477]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/BP_GameballCEE37CAC4C500B959E4E069796C534BB.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset'
+[2016.11.01-06.12.56:159][477]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset
+[2016.11.01-06.12.58:087][651]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.12.58:087][651]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.01-06.12.58:089][651]PIE: New page: PIE session: Pong_Playfield (Oct 31, 2016, 3:12:58 PM)
+[2016.11.01-06.12.58:089][651]LogPlayLevel: Creating play world package: /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield
+[2016.11.01-06.12.58:098][651]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008430s)
+[2016.11.01-06.12.58:098][651]LogAIModule: Creating AISystem for world Pong_Playfield
+[2016.11.01-06.12.58:098][651]LogPlayLevel: PIE: World Init took: (0.000807s)
+[2016.11.01-06.12.58:099][651]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield to /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield (0.009472s)
+[2016.11.01-06.12.58:134][651]LogInit: XAudio2 using 'Speakers (Yeti Stereo Microphone)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.01-06.12.58:144][651]LogInit: FAudioDevice initialized.
+[2016.11.01-06.12.58:274][651]LogWorld: Game class is 'GM_UE4_Pong_C'
+[2016.11.01-06.12.58:278][651]LogWorld: Bringing World /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield up for play (max tick rate 0) at 2016.10.31-23.12.58
+[2016.11.01-06.12.58:279][651]LogWorld: Bringing up level for play took: 0.003452
+[2016.11.01-06.12.58:287][651]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 11 classes and 0 folders.
+[2016.11.01-06.12.58:289][651]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.58:289][651]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.12.58:367][651]PIE: Info Play in editor start time for /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield -0.629
+[2016.11.01-06.12.58:367][651]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.12.58:394][651]LogRenderer: Reallocating scene render targets to support 1292x756 (Frame:20186).
+[2016.11.01-06.13.01:626][923]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.13.01:626][923]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.13.03:587][ 90]LogBlueprintUserMessages: [BP_Gameball_C_1] HIT
+[2016.11.01-06.13.03:587][ 90]LogBlueprintUserMessages: [BP_Gameball_C_1] 1
+[2016.11.01-06.13.07:992][465]LogBlueprintUserMessages: [BP_Gameball_C_1] HIT
+[2016.11.01-06.13.08:732][526]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.13.08:732][526]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.13.10:688][693]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.13.10:688][693]LogBlueprintUserMessages: [BP_Gameball_C_2] 1
+[2016.11.01-06.13.11:237][740]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.13.11:282][740]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.14.38:647][612]LogSavePackage: Save=27.90ms
+[2016.11.01-06.14.38:647][612]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/P_ExplosionEA864AD14146673039C0E3B2B1DF943F.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/StarterContent/Particles/P_Explosion.uasset'
+[2016.11.01-06.14.38:650][612]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/StarterContent/Particles/P_Explosion.uasset
+[2016.11.01-06.14.40:031][771]LogCascade: Quitting Cascade. FXSystem=0x000001DFE835A520
+[2016.11.01-06.16.26:893][163]LogCascade: Quitting Cascade. FXSystem=0x000001DFE87A4680
+[2016.11.01-06.17.08:930][144]Cmd: DELETE
+[2016.11.01-06.17.08:930][144]Cmd: ACTOR DELETE
+[2016.11.01-06.17.08:931][144]LogEditorActor: Deleted Actor: Emitter
+[2016.11.01-06.17.08:951][144]LogEditorActor: Deleted 1 Actors (0.021 secs)
+[2016.11.01-06.19.01:494][118]LogSavePackage: Save=28.63ms
+[2016.11.01-06.19.01:494][118]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/P_Explosion8B03F0794D3B13CA57045AAA518F3EFC.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/StarterContent/Particles/P_Explosion.uasset'
+[2016.11.01-06.19.01:498][118]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/StarterContent/Particles/P_Explosion.uasset
+[2016.11.01-06.19.02:656][249]LogCascade: Quitting Cascade. FXSystem=0x000001DFE835BBA0
+[2016.11.01-06.19.41:187][250]BlueprintLog: New page: Compile BP_Gameball
+[2016.11.01-06.19.41:256][250]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.19.41:257][250]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.19.41:337][250]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.19.41:337][250]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.19.41:339][250]BlueprintEditorCompileResults: Info [0759.50] Compile of BP_Gameball successful! [in 151 ms] (/Game/UE4_Pong/Blueprints/BP_Gameball.BP_Gameball)
+[2016.11.01-06.19.41:978][303]LogSavePackage: Save=101.34ms
+[2016.11.01-06.19.41:978][303]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/BP_Gameball403CEF214463681E57B2A293260F4137.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset'
+[2016.11.01-06.19.41:982][303]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset
+[2016.11.01-06.21.26:538][511]BlueprintLog: New page: Compile BP_Gameball
+[2016.11.01-06.21.26:610][511]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.26:610][511]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.26:689][511]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.26:689][511]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.26:692][511]BlueprintEditorCompileResults: Info [0864.85] Compile of BP_Gameball successful! [in 153 ms] (/Game/UE4_Pong/Blueprints/BP_Gameball.BP_Gameball)
+[2016.11.01-06.21.28:495][702]LogSavePackage: Save=108.02ms
+[2016.11.01-06.21.28:495][702]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/BP_GameballE97C1A4841F96A8A9FF2D5B011633F8A.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset'
+[2016.11.01-06.21.28:498][702]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset
+[2016.11.01-06.21.30:499][916]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.21.30:499][916]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.01-06.21.30:500][916]PIE: New page: PIE session: Pong_Playfield (Oct 31, 2016, 3:21:30 PM)
+[2016.11.01-06.21.30:500][916]LogPlayLevel: Creating play world package: /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield
+[2016.11.01-06.21.30:508][916]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008425s)
+[2016.11.01-06.21.30:509][916]LogAIModule: Creating AISystem for world Pong_Playfield
+[2016.11.01-06.21.30:509][916]LogPlayLevel: PIE: World Init took: (0.000699s)
+[2016.11.01-06.21.30:509][916]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield to /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield (0.009341s)
+[2016.11.01-06.21.30:543][916]LogInit: XAudio2 using 'Speakers (Yeti Stereo Microphone)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.01-06.21.30:552][916]LogInit: FAudioDevice initialized.
+[2016.11.01-06.21.30:631][916]LogWorld: Game class is 'GM_UE4_Pong_C'
+[2016.11.01-06.21.30:635][916]LogWorld: Bringing World /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield up for play (max tick rate 0) at 2016.10.31-23.21.30
+[2016.11.01-06.21.30:636][916]LogWorld: Bringing up level for play took: 0.003509
+[2016.11.01-06.21.30:638][916]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.30:638][916]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.30:706][916]PIE: Info Play in editor start time for /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield -0.29
+[2016.11.01-06.21.30:706][916]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.21.33:176][153]LogBlueprintUserMessages: [BP_Gameball_C_0] HIT
+[2016.11.01-06.21.33:869][221]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.33:869][221]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.35:821][414]LogBlueprintUserMessages: [BP_Gameball_C_1] HIT
+[2016.11.01-06.21.35:821][414]LogBlueprintUserMessages: [BP_Gameball_C_1] 1
+[2016.11.01-06.21.40:878][911]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.40:878][911]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.21.42:243][ 46]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.21.42:288][ 46]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.22.01:666][319]BlueprintLog: New page: Compile BP_Gameball
+[2016.11.01-06.22.01:736][319]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.01:736][319]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.01:815][319]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.01:815][319]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_4.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.01:817][319]BlueprintEditorCompileResults: Info [0899.97] Compile of BP_Gameball successful! [in 151 ms] (/Game/UE4_Pong/Blueprints/BP_Gameball.BP_Gameball)
+[2016.11.01-06.22.02:720][407]LogSavePackage: Save=107.66ms
+[2016.11.01-06.22.02:721][407]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/BP_GameballF508402A4ABEDC92D9B514B84635117C.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset'
+[2016.11.01-06.22.02:724][407]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset
+[2016.11.01-06.22.04:719][637]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.22.04:719][637]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.11.01-06.22.04:719][637]PIE: New page: PIE session: Pong_Playfield (Oct 31, 2016, 3:22:04 PM)
+[2016.11.01-06.22.04:720][637]LogPlayLevel: Creating play world package: /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield
+[2016.11.01-06.22.04:728][637]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008632s)
+[2016.11.01-06.22.04:729][637]LogAIModule: Creating AISystem for world Pong_Playfield
+[2016.11.01-06.22.04:729][637]LogPlayLevel: PIE: World Init took: (0.000662s)
+[2016.11.01-06.22.04:729][637]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield to /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield (0.009581s)
+[2016.11.01-06.22.04:763][637]LogInit: XAudio2 using 'Speakers (Yeti Stereo Microphone)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.11.01-06.22.04:771][637]LogInit: FAudioDevice initialized.
+[2016.11.01-06.22.04:849][637]LogWorld: Game class is 'GM_UE4_Pong_C'
+[2016.11.01-06.22.04:853][637]LogWorld: Bringing World /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield.Pong_Playfield up for play (max tick rate 0) at 2016.10.31-23.22.04
+[2016.11.01-06.22.04:854][637]LogWorld: Bringing up level for play took: 0.003815
+[2016.11.01-06.22.04:856][637]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.04:856][637]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_0.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.04:898][637]PIE: Info Play in editor start time for /Game/UE4_Pong/Maps/UEDPIE_0_Pong_Playfield -0.097
+[2016.11.01-06.22.04:898][637]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.22.07:084][893]LogBlueprintUserMessages: [BP_Gameball_C_0] HIT
+[2016.11.01-06.22.07:723][969]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.07:723][969]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_1.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.10:278][273]LogBlueprintUserMessages: [BP_Gameball_C_1] HIT
+[2016.11.01-06.22.10:832][339]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.10:832][339]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_2.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.12:785][571]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.12:785][571]LogBlueprintUserMessages: [BP_Gameball_C_2] 1
+[2016.11.01-06.22.17:094][ 79]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.17:306][104]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.17:689][149]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.18:043][191]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.18:154][204]LogBlueprintUserMessages: [BP_Gameball_C_2] HIT
+[2016.11.01-06.22.18:770][276]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_3.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.18:770][276]PIE:Warning: Warning Invalid Simulate Options: Body (BP_Gameball_C_3.StaticMeshComponent0 SM_Gameball) is set to simulate physics but Collision Enabled is incompatible
+[2016.11.01-06.22.20:723][506]LogBlueprintUserMessages: [BP_Gameball_C_3] HIT
+[2016.11.01-06.22.20:723][506]LogBlueprintUserMessages: [BP_Gameball_C_3] 1
+[2016.11.01-06.22.22:131][674]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.22.22:177][674]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel' has LevelScriptBlueprint '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield' with GeneratedClass '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield_C' with ClassGeneratedBy '/Game/UE4_Pong/Maps/Pong_Playfield.Pong_Playfield:PersistentLevel.Pong_Playfield'
+[2016.11.01-06.23.05:993][611]LogSavePackage: Save=98.13ms
+[2016.11.01-06.23.05:993][611]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/BP_Gameball5081C9E849B63D4907CD159308BDB75A.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset'
+[2016.11.01-06.23.05:995][611]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Blueprints/BP_Gameball.uasset
+[2016.11.01-06.23.11:504][206]LogSavePackage: Save=189.76ms
+[2016.11.01-06.23.11:504][206]LogSavePackage: Moving '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Saved/Pong_PlayfieldB9FF81DC48545179855E7EA26A8DF736.tmp' to '../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Maps/Pong_Playfield.umap'
+[2016.11.01-06.23.11:507][206]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/Machinehead/Documents/Unreal Projects/UE4_Pong_Sec3/Content/UE4_Pong/Maps/Pong_Playfield.umap
+[2016.11.01-06.23.15:065][602]Cmd: QUIT_EDITOR
+[2016.11.01-06.23.15:237][602]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2016.11.01-06.23.15:284][602]LogExit: Preparing to exit.
+[2016.11.01-06.23.16:135][602]LogExit: Editor shut down
+[2016.11.01-06.23.16:135][602]LogExit: Transaction tracking system shut down
+[2016.11.01-06.23.16:272][602]LogObj: Freed 0b from 0 cluster array pools.
+[2016.11.01-06.23.16:272][602]LogExit: Object subsystem successfully closed.
+[2016.11.01-06.23.16:286][602]LogD3D11RHI: Shutdown
+[2016.11.01-06.23.16:286][602]LogD3D11RHI: CleanupD3DDevice
+[2016.11.01-06.23.16:345][602]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (214)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module DistCurveEditor (213)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module Cascade (212)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module BlueprintGraph (211)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (210)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module CrashTracker (209)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module SceneOutliner (208)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module WidgetCarousel (207)
+[2016.11.01-06.23.16:369][602]LogModuleManager: Shutting down and abandoning module AddContentDialog (206)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module GameplayTags (205)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module EditorWidgets (204)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module CollectionManager (203)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module StatsViewer (202)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module FoliageEdit (201)
+[2016.11.01-06.23.16:370][602]LogModuleManager: Shutting down and abandoning module LandscapeEditor (200)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (199)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module ActorPickerMode (198)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module GeometryMode (197)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module TextureAlignMode (196)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module BspMode (195)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (194)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module SequenceRecorder (193)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module AutomationWorker (192)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (191)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module PlacementMode (190)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (189)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module CharacterAI (188)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module SmartSnapping (187)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module SessionServices (186)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module ViewportSnapping (185)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module LogVisualizer (184)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (183)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module IntroTutorials (182)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (181)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (180)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (179)
+[2016.11.01-06.23.16:371][602]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (178)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (177)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (176)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (175)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module MergeActors (174)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module SizeMap (173)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module TreeMap (172)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module ReferenceViewer (171)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module LocalizationService (170)
+[2016.11.01-06.23.17:109][602]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (169)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module HardwareTargeting (168)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (167)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module UndoHistory (166)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module UserFeedback (165)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module XmlParser (164)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module Blutility (163)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (162)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (161)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module InputBindingEditor (160)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (159)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module SettingsEditor (158)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module ProjectLauncher (157)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module SessionFrontend (156)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module ProfilerClient (155)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (154)
+[2016.11.01-06.23.17:110][602]LogModuleManager: Shutting down and abandoning module DeviceManager (153)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module AutomationController (152)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module AutomationWindow (151)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module Layers (150)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (149)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module DetailCustomizations (148)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module PackagesDialog (147)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module Persona (146)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module Kismet (145)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module GraphEditor (144)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module ClassViewer (143)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module Toolbox (142)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module ModuleUI (141)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module MovieSceneTools (140)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module OutputLog (139)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module GammaUI (138)
+[2016.11.01-06.23.17:165][602]LogModuleManager: Shutting down and abandoning module Documentation (137)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (136)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.11.01-06.23.17:166][602]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.11.01-06.23.17:380][602]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.11.01-06.23.17:380][602]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.11.01-06.23.17:380][602]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.11.01-06.23.17:381][602]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.11.01-06.23.17:382][602]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.11.01-06.23.17:382][602]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.11.01-06.23.17:383][602]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.11.01-06.23.17:384][602]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.11.01-06.23.17:385][602]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.11.01-06.23.17:485][602]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.11.01-06.23.17:486][602]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.11.01-06.23.17:492][602]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.11.01-06.23.17:493][602]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.11.01-06.23.17:633][602]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.11.01-06.23.17:633][602]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.11.01-06.23.17:633][602]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.11.01-06.23.17:633][602]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.11.01-06.23.17:695][602]LogDerivedDataCache: Shutdown
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.11.01-06.23.17:695][602]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.11.01-06.23.17:696][602]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.11.01-06.23.17:698][602]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.11.01-06.23.17:700][602]LogExit: Exiting.
+[2016.11.01-06.23.17:720][602]Log file closed, 10/31/16 23:23:17
